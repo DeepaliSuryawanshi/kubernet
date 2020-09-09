@@ -1,0 +1,17 @@
+kubectl create deployment hello-node --image=k8s.gcr.io/echoserver:1.4
+
+View the Deployment:
+kubectl get deployments
+
+View the Pod:
+kubectl get pods
+The output is similar to:
+
+NAME                          READY     STATUS    RESTARTS   AGE
+hello-node-5f76cf6ccf-br9b5   1/1       Running   0          1m
+
+View cluster events:
+kubectl get events
+
+View the kubectl configuration:
+kubectl config view
